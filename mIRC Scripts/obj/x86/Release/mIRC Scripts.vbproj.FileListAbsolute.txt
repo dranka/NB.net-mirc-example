@@ -1,0 +1,46 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.exe.manifest
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.application
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC_Scripts.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC_Scripts.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.exe.manifest
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.application
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.pdb
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.exe
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.xml
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.pdb
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.exe.manifest
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.application
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.exe
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.pdb
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.xml
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC_Scripts.Form1.resources
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC_Scripts.Resources.resources
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.exe.manifest
+C:\Users\Gary\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.application
+C:\Documents and Settings\Gary\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.exe
+C:\Documents and Settings\Gary\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.xml
+C:\Documents and Settings\Gary\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.pdb
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.exe
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.xml
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.pdb
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.exe.manifest
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.application
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.exe
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.pdb
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\bin\Release\mIRC Scripts.xml
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC_Scripts.Form1.resources
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC_Scripts.Resources.resources
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.vbproj.GenerateResource.Cache
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.exe.manifest
+D:\Visual Studio Projects\mIRC Scripts\mIRC Scripts\obj\x86\Release\mIRC Scripts.application

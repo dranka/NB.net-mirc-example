@@ -1,0 +1,493 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+mIRCScripts
+</name>
+</assembly>
+<members>
+<member name="T:mIRC_Scripts.clsIRCMessageHandler.strColors">
+	<summary>
+ The enumeration list of colors that are available when generating
+ a message to be sent out with the IRC bot.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCMessageHandler.onError">
+	<summary>
+ If any error occurs while either sending or generating messages then
+ it will be picked up by this event listener.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCMessageHandler.onMessageDelivered">
+	<summary>
+ When the message has been delivered in a single stream, then this
+ event listener will be called - with the destination and text
+ that was sent.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCMessageHandler.onMessageSplitDelivered">
+	<summary>
+ When the message has been delivered in several streams, then this
+ event listener will be called - with the destination, text and parts count
+ that was sent.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCMessageHandler.onMessageGenerated">
+	<summary>
+ When a message has successfully been generated, then this event
+ listener will be called, with the text generated a long with any
+ formatting you have asked for.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCMessageHandler.MaxMessageLength">
+	<summary>
+ Set the max message length the server accepts. This can be different
+ on the different IRC daemons, so make sure you check what this could
+ be on the server you want to operate this bot on. If you are unsure,
+ then leave it at the default setting (300 chars).
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCMessageHandler.#ctor(mIRC_Scripts.clsIRCHandler)">
+	<summary>
+ Creates a new instance of this class. Requires an instance of the
+ IRC handler to be supplied as an argument.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCMessageHandler.GenerateMessagePart(System.String,System.Boolean,System.Boolean,mIRC_Scripts.clsIRCMessageHandler.strColors)">
+	<summary>
+ Generate a message string, formatting the text with either bold or
+ colors if wanted. Default setting is plain text.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCMessageHandler.SendMessage(System.String,System.String)">
+	<summary>
+ Send a message to a destination (channel or nickname). The message will
+ be split over several lines if its longer than the max message length
+ that is defined (default 300 chars). It will attempt to split the string
+ in a smart way, by determining where the nearest space is located, and
+ then split it there.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCMessageHandler">
+	<summary>
+ This class handles all the functions that relates to sending and generating
+ IRC messages both with and without formatting. This class should be used
+ when using the other classes, to ease the way of generating the PRIVMSG
+ data strings.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCHandler.StateObject">
+	<summary>
+ Internal class to handle the data and buffers.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCHandler.onConnected">
+	<summary>
+ Is raised when connection is successful.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCHandler.onError">
+	<summary>
+ Is raised whenever an error occur.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCHandler.onDataArrival">
+	<summary>
+ Is raised when data is inbound to the IRC Bot.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCHandler.onDisconnect">
+	<summary>
+ Is raised when the IRC Bot is disconnected.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCHandler.onSendComplete">
+	<summary>
+ Is raised when the sending of the data stream is completed.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCHandler.Version">
+	<summary>
+ Get the current version of this project.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCHandler.Modified">
+	<summary>
+ Get the current modification date of this project.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCHandler.Author">
+	<summary>
+ Get the author of this project.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCHandler.Title">
+	<summary>
+ Get the title of this project.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCHandler.Nickname">
+	<summary>
+ Gets or sets the nickname of the IRC Bot.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCHandler.Username">
+	<summary>
+ Gets or sets the username of the IRC Bot.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCHandler.CommandInterpreter">
+	<summary>
+ Gets or sets the command interpreter of the IRC Bot. This
+ is the interpreter the bot will look for to determine
+ if the incoming text might be a command or not. Default value
+ for this setting is '!' - which means it will react to
+ commands like !test.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.Login">
+	<summary>
+ Sends the login sequence to the IRC server - here it sets its
+ nickname as well as username.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.Connect(System.String,System.Int32)">
+	<summary>
+ Initiate the connection sequence, if connected it will
+ raise an onConnected event.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.SendData(System.Byte[])">
+	<summary>
+ Send byte data to the IRC Server.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.Disconnect">
+	<summary>
+ Disconnect from the server.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.StringToBytes(System.String)">
+	<summary>
+ Convert a string to a byte array.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.BytestoString(System.Byte[])">
+	<summary>
+ Convert a byte array to a string.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.sockConnected(System.IAsyncResult)">
+	<summary>
+ If the client manages to connect, then we'll raise the event
+ onConnected to signal that the connection was successful. If not
+ an error is raised.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.sockDataArrival(System.IAsyncResult)">
+	<summary>
+ Read the incoming data from the client.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.sockSendEnd(System.IAsyncResult)">
+	<summary>
+ Data has been sent successfully, raise an event to
+ signal that its been completed.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.Connected">
+	<summary>
+ Returns whetever the IRC Bot is connected or not.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCHandler.#ctor">
+	<summary>
+ Handles the new generation of the IRC Bot handler. Upon creation a random
+ nickname is set, and will be used unless overrided by the user when
+ setting the values.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCHandler">
+	<summary>
+ This class handles all the functions that relates to the IRC connection
+ and its status. As well as some spesific event handlers to pick up
+ join/part messages from the channels.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCCommandHandler.onCommand">
+	<summary>
+ When a command is picked up, its directed to this event listener along
+ with attributes; channel, nickname, ident, hostname, command and
+ arguments.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCCommandHandler.#ctor(mIRC_Scripts.clsIRCHandler)">
+	<summary>
+ Creates a new instance of this class. Requires an instance of the
+ IRC handler to be supplied as an argument.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCCommandHandler.commandHandler(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ The command handler, it will check the incoming data and either pick up
+ the command issued, or if any pre-defined command like PING it will
+ act accordingly.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCCommandHandler">
+	<summary>
+ This class handles all the functions that relates to picking up commands
+ that are being sent to the bot. It will check if the incoming text
+ contains the command interpreter that has been set (default is !)
+ and if found, make a call to the event listener onCommand.
+ </summary>
+</member><member name="P:mIRC_Scripts.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:mIRC_Scripts.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:mIRC_Scripts.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:mIRC_Scripts.clsIRCBotHandler.#ctor(mIRC_Scripts.clsIRCHandler)">
+	<summary>
+ Creates a new instance of this class. Requires an instance of the
+ IRC handler to be supplied as an argument.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCBotHandler">
+	<summary>
+ This class handles all the functions that relates to bot handling.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCChannelHandler.channelModesList">
+	<summary>
+ List of channel modes currently supported.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onJoinChannel">
+	<summary>
+ Is raised whenever you make the bot join a channel.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onPartChannel">
+	<summary>
+ Is raised whenever you make the bot part a channel.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onError">
+	<summary>
+ Is raised whenever an error occur.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelGotKey">
+	<summary>
+ Is raised when a channel key is set.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelRemovedKey">
+	<summary>
+ Is raised when a channel key is removed.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelGotLimitations">
+	<summary>
+ Is raised when a channel limitation is set.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelRemovedLimitations">
+	<summary>
+ Is raised when a channel limitation is removed.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelGotModeration">
+	<summary>
+ Is raised when a channel is moderated.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelRemovedModeration">
+	<summary>
+ Is raised when a channel is no longer moderated.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelEnforceNoExternalMessages">
+	<summary>
+ Is raised when a channel enforce that no external messages can be
+ sent to the channel.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelNoLongerEnforceNoExternalMessages">
+	<summary>
+ Is raised when a channel allows external messages to be sent to the channel.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelIsPrivate">
+	<summary>
+ Is raised when a channel is marked as private.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelIsNoLongerPrivate">
+	<summary>
+ Is raised when a channel is no longer marked as private.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelIsSecret">
+	<summary>
+ Is raised when a channel is marked as secret.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelIsNoLongerSecret">
+	<summary>
+ Is raised when a channel is no longer marked as secret.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelTopicByOperatorsOnly">
+	<summary>
+ Is raised when a channel topic can be set by operators only.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelTopicByEveryone">
+	<summary>
+ Is raised when a channel topic can be set by everyone.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelInviteOnly">
+	<summary>
+ Is raised when a channel is marked as invitation only.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onChannelNotInviteOnly">
+	<summary>
+ Is raised when a channel is no longer invitation only.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onUserMarkedAsOperator">
+	<summary>
+ Is raised when a user recieves operator status on a channel.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCChannelHandler.onUserRemovedAsOperator">
+	<summary>
+ Is raised when a user on a channel is no longer operator there.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.#ctor(mIRC_Scripts.clsIRCHandler)">
+	<summary>
+ Creates a new instance of this class. Requires an instance of the
+ IRC handler to be supplied as an argument.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCChannelHandler.RemoveOperator">
+	<summary>
+ Sets and gets the operator that is used when removing a channel flag.
+ Default this is set to '0' which means you call a command and supply
+ '0' as the argument.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.JoinChannel(System.String)">
+	<summary>
+ Make the bot join a spesific channel.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.PartChannel(System.String)">
+	<summary>
+ Make the bot part a spesific channel.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setUserAsOperator(System.String,System.String,System.Boolean)">
+	<summary>
+ Set or remove a user as a operator of a given channel.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelInviteOnly(System.String,System.Boolean)">
+	<summary>
+ Set or remove if a channel should be invitation only.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelKey(System.String,System.String,System.Boolean)">
+	<summary>
+ Set or remove if a channel should be key protected.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelLimitations(System.String,System.String,System.Boolean)">
+	<summary>
+ Set or remove if a channel should have a spesific limitation of users.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelModerated(System.String,System.Boolean)">
+	<summary>
+ Set or remove if a channel should be moderated (only voiced and operators can speak).
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelNoExternalMessages(System.String,System.Boolean)">
+	<summary>
+ Set or remove if people outside the channel can post messages to the channel.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelPrivate(System.String,System.Boolean)">
+	<summary>
+ Set or remove if a channel should be marked as private (more common to set the channel
+ as secret).
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelSecret(System.String,System.Boolean)">
+	<summary>
+ Set or remove if a channel should be marked as secret.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.setChannelTopicOnlyByOperators(System.String,System.Boolean)">
+	<summary>
+ Set or remove if a channels topic can be altered by others than the operators.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.ChannelMode(System.String,mIRC_Scripts.clsIRCChannelHandler.channelModesList,System.String)">
+	<summary>
+ Set the different channelmodes.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCChannelHandler.verifyChannelName(System.String)">
+	<summary>
+ Check if the channel name is correctly given, meaning it should
+ contain a # - if not, then append it.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCChannelHandler">
+	<summary>
+ This class handles all the functions that relates to channel handling
+ and joining/parting of the IRC Bot.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCParseHandler.strCommandErrors">
+	<summary>
+ List of current supported server/command replies.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:mIRC_Scripts.clsIRCParseHandler.onIncomingCommand">
+	<summary>
+ Is raised when the parse routine finds that the incoming text could
+ very well be a command.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCParseHandler.onCommandError">
+	<summary>
+ Is raised when the parse routine finds a error related feedback.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCParseHandler.onServerReply">
+	<summary>
+ Is raised when a server reply is caught (not errors, those are handled in onCommandError)
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCParseHandler.onPart">
+	<summary>
+ Is raised when the bot or someone else parts a channel.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCParseHandler.onJoin">
+	<summary>
+ Is raised when the bot or someone else joins a channel.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCParseHandler.onError">
+	<summary>
+ Is raised when an error occurs in this class.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.parseIncomingReply(System.String)">
+	<summary>
+ Go through the incoming data and check if we find any useful data
+ in there. The parse routine will pick up elements like PING, JOIN,
+ PART and PRIVMSG amongst others and raise events to signal them
+ different commands.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.getCommandReplies(System.String,System.String,System.String,System.String)">
+	<summary>
+ Check what the commands/server replies.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.getNickname(System.String)">
+	<summary>
+ Returns the nickname from the incoming text. 
+ The incoming text needs to be in the format: nick!ident@hostname
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.getUserIdent(System.String)">
+	<summary>
+ Returns the ident from the incoming text. 
+ The incoming text needs to be in the format: nick!ident@hostname
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.getUserHostname(System.String)">
+	<summary>
+ Returns the hostname from the incoming text. 
+ The incoming text needs to be in the format: nick!ident@hostname
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.getArguments(System.String[],System.Int32)">
+	<summary>
+ Returns the list of arguments as a string array.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.getLineArguments(System.String[])">
+	<summary>
+ Returns the list of arguments as a string.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCParseHandler.stripLineBreaks(System.String)">
+	<summary>
+ Remove any line breaks from the supplied text.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCParseHandler">
+	<summary>
+ This class handles all the functions that relates to the parsing of
+ IRC data. To determine what is being sent to and from the IRC Bot.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCRandomNickHandler.onNicknameGeneration">
+	<summary>
+ Is raised when a random nickname has been generated.
+ </summary>
+</member><member name="E:mIRC_Scripts.clsIRCRandomNickHandler.onError">
+	<summary>
+ Is raised if there is an error while generating a random nickname.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCRandomNickHandler.Letters">
+	<summary>
+ Set or get the letters that will be used in the nickname generation.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCRandomNickHandler.Numbers">
+	<summary>
+ Set or get the numbers that will be used in the nickname generation.
+ </summary>
+</member><member name="P:mIRC_Scripts.clsIRCRandomNickHandler.Length">
+	<summary>
+ Set or get the length of the nickname to be generated. Note that on most
+ IRC servers the maximum nickname length is 8 - so make sure you check this
+ before starting to experiment with the length.
+ </summary>
+</member><member name="M:mIRC_Scripts.clsIRCRandomNickHandler.GenerateNickname">
+	<summary>
+ Return a random generated nickname based on letters and numbers.
+ </summary>
+</member><member name="T:mIRC_Scripts.clsIRCRandomNickHandler">
+	<summary>
+ This class handles all the functions that relates to channel handling
+ and joining/parting of the IRC Bot.
+ </summary>
+</member>
+</members>
+</doc>

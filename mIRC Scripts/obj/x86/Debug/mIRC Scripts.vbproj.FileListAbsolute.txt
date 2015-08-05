@@ -1,0 +1,30 @@
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.exe
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.pdb
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.xml
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC_Scripts.Form1.resources
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC_Scripts.Resources.resources
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.exe
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.xml
+c:\users\gary turner\documents\visual studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.pdb
+C:\Users\Gary Turner\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.exe.manifest
+C:\Users\Gary Turner\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.application
+C:\Users\Gary Turner\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.exe.manifest
+C:\Users\Gary Turner\Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.application
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.exe.manifest
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.application
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\bin\Debug\mIRC Scripts.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC_Scripts.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC_Scripts.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.exe.manifest
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\mIRC Scripts\mIRC Scripts\obj\x86\Debug\mIRC Scripts.application
